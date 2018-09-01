@@ -1,4 +1,7 @@
 *.local
 *.identcache
 *.stat
+__history/
+Win32/
+WinApp.res
 
