@@ -13,47 +13,30 @@ object Form4: TForm4
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object connectButton: TButton
-    Left = 0
-    Top = 160
-    Width = 217
-    Height = 41
-    Align = alCustom
-    Caption = 'Connect'
-    TabOrder = 0
-    OnClick = connectButtonClick
-  end
-  object executeButton: TButton
-    Left = 216
-    Top = 160
-    Width = 233
-    Height = 41
-    Align = alCustom
-    Caption = 'Execute'
-    Enabled = False
-    TabOrder = 1
-    OnClick = executeButtonClick
-  end
   object StringGrid1: TStringGrid
+    Tag = 5
+    Left = 0
+    Top = 25
+    Width = 447
+    Height = 170
+    Align = alClient
+    DefaultColWidth = 85
+    FixedCols = 0
+    RowCount = 90
+    TabOrder = 0
+  end
+  object NavigatorBindSourceDB1: TBindNavigator
     Left = 0
     Top = 0
-    Width = 449
-    Height = 129
-    Align = alCustom
-    ColCount = 2
-    DefaultColWidth = 225
-    FixedCols = 0
-    TabOrder = 2
-  end
-  object Memo1: TMemo
-    Left = 0
-    Top = 128
-    Width = 449
-    Height = 34
-    Align = alCustom
-    Lines.Strings = (
-      'Memo1')
-    TabOrder = 3
+    Width = 447
+    Height = 25
+    DataSource = BindSourceDB1
+    Align = alTop
+    Orientation = orHorizontal
+    TabOrder = 1
+    ExplicitLeft = 112
+    ExplicitTop = 104
+    ExplicitWidth = 240
   end
   object FDConnection1: TFDConnection
     Params.Strings = (
@@ -68,5 +51,32 @@ object Form4: TForm4
   object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
     Left = 232
     Top = 56
+  end
+  object FDTable1: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = FDConnection1
+    UpdateOptions.UpdateTableName = 'capsule'
+    TableName = 'capsule'
+    Left = 272
+    Top = 56
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDTable1
+    ScopeMappings = <>
+    Left = 216
+    Top = 104
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
   end
 end
