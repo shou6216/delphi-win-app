@@ -62,5 +62,6 @@ object Form1: TForm1
     Height = 25
     Caption = 'FireDAC(SQLite)'
     TabOrder = 5
+    OnClick = Button3Click
   end
 end
