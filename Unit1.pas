@@ -14,6 +14,7 @@ type
     ListBox1: TListBox;
     Button2: TButton;
     CheckBox1: TCheckBox;
+    Button3: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
   private

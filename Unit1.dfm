@@ -55,4 +55,12 @@ object Form1: TForm1
     Caption = #12514#12540#12480#12523
     TabOrder = 4
   end
+  object Button3: TButton
+    Left = 312
+    Top = 64
+    Width = 105
+    Height = 25
+    Caption = 'FireDAC(SQLite)'
+    TabOrder = 5
+  end
 end
