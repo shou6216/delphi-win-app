@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
-  Unit2;
+  Unit2, Unit3;
 
 type
   TForm1 = class(TForm)
@@ -42,9 +42,12 @@ procedure TForm1.Button2Click(Sender: TObject);
 begin
   // if-elseはelseまでで1文、else前でセミコロン使わない
   if CheckBox1.Checked then
-    Form2.ShowModal
+    if (Form2.ShowModal = mrOk) and (Form2.Edit1.Text <> '') then
+      ListBox1.Items.Add(Form2.Edit1.Text)
+    else
+
   else
-    Form2.Show;
+    Form3.Show;
 end;
 
 end.

@@ -1,4 +1,4 @@
-unit Unit2;
+unit Unit3;
 
 interface
 
@@ -7,10 +7,8 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TForm2 = class(TForm)
+  TForm3 = class(TForm)
     Label1: TLabel;
-    Button1: TButton;
-    Edit1: TEdit;
   private
     { Private êÈåæ }
   public
@@ -18,7 +16,7 @@ type
   end;
 
 var
-  Form2: TForm2;
+  Form3: TForm3;
 
 implementation
 

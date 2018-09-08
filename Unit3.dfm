@@ -1,7 +1,7 @@
-object Form2: TForm2
+object Form3: TForm3
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Form3'
   ClientHeight = 201
   ClientWidth = 447
   Color = clBtnFace
@@ -17,9 +17,10 @@ object Form2: TForm2
     Left = 0
     Top = 0
     Width = 447
-    Height = 33
+    Height = 201
+    Align = alClient
     Alignment = taCenter
-    Caption = #12514#12540#12480#12523
+    Caption = #12514#12540#12480#12524#12473
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -27
@@ -27,23 +28,7 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     Layout = tlCenter
-  end
-  object Button1: TButton
-    Left = 0
-    Top = 176
-    Width = 447
-    Height = 25
-    Align = alBottom
-    Caption = #25147#12427
-    ModalResult = 1
-    TabOrder = 0
-  end
-  object Edit1: TEdit
-    Left = 0
-    Top = 39
-    Width = 225
-    Height = 18
-    TabOrder = 1
-    Text = 'Form2'#31354#12398#25147#12426#20516
+    ExplicitWidth = 103
+    ExplicitHeight = 33
   end
 end
