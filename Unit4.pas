@@ -36,8 +36,6 @@ implementation
 procedure TForm4.connectButtonClick(Sender: TObject);
 begin
   Memo1.Text := '';
-  FDConnection1.DriverName := 'SQLITE';
-  FDConnection1.Params.Values['Database'] := 'C:\\Development\\rcs\\git\\delphi-win-app\\fusion-rize.db';
   try
     FDConnection1.Open;
     executeButton.Enabled := True;
@@ -72,6 +70,9 @@ begin
       Inc(rowIndex);
       query.Next;
     end;
+
+    StringGrid1.ColCount := 2;
+    StringGrid1.RowCount := rowIndex;
 
   finally
     query.Close;

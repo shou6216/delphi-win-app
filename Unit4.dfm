@@ -56,6 +56,12 @@ object Form4: TForm4
     TabOrder = 3
   end
   object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=C:\Development\rcs\git\delphi-win-app\fusion-rize.db'
+      'LockingMode=Normal'
+      'DriverID=SQLite')
+    Connected = True
+    LoginPrompt = False
     Left = 128
     Top = 48
   end
