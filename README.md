@@ -17,3 +17,4 @@
 * DUnitX
     * 画面なしサブモジュール(SubModule.pas)
     * Assert(Unit5.pas)
+    * [Assertの種類](http://docwiki.embarcadero.com/RADStudio/XE3/ja/DUnit_の概要#DUnit_.E9.96.A2.E6.95.B0)
